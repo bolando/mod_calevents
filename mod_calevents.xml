@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.3.0" client="site" method="upgrade">
+	<name>mod_calevents</name>
+	<author>albertas</author>
+	<creationDate>June 2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>alebertas@wp.pl</authorEmail>
+	<authorUrl>albertas.com.pl</authorUrl>
+	<version>1.0</version>
+	<description>Calendar events extract</description>
+	<files>
+		<filename module="mod_calevents">mod_calevents.php</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_calevents.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="" />
+				<field name="calevents_title" type="text" default="Kalendarz" label="Tytuł kalendarza" description="Tytuł listy wydarzeń będący odnośnikiem do listy wydarzeń" />
+				<field name="events_limit" type="text" default="3" label="Liczba pokazywanych wydarzeń" description="Maksymalna liczba pokazywanych wydarzeń" />
+				<field name="days_count" type="text" default="20" label="Liczba dni" description="Liczba dni do których są pokazywane wydarzenia" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
